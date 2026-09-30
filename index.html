@@ -6,6 +6,13 @@
 
     <title>Accessible Modal</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       /* ------------------------------
        基本スタイル
@@ -25,6 +32,32 @@
 
       body.modal-open {
         overflow: hidden;
+      }
+
+      /* ------------------------------
+       ヘッダー（Figma: Frame 1）
+    ------------------------------ */
+
+      .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        padding: 14px 72px;
+
+        background: #f5ffba;
+      }
+
+      .site-header__title {
+        margin: 0;
+
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: normal;
+        color: #000;
+        text-align: center;
       }
 
       main {
@@ -169,6 +202,10 @@
   </head>
 
   <body>
+    <header class="site-header">
+      <p class="site-header__title">Claude Code - Figma test</p>
+    </header>
+
     <!--
     モーダルの外側。
 
